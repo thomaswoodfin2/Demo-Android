@@ -1,0 +1,194 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DialogTheme" parent="@style/Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:color">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="primaryButton" parent="style_HeightWidthWM">
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">onClickEvent</item>
+        <item name="android:textSize">@dimen/font_18</item>
+        <item name="android:padding">@dimen/dim_8</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="optionsButton" parent="style_HeightWidthWM">
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">onClickEvent</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:padding">@dimen/dim_3</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="style_HeightWidthWM" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="text_grey_Login_Reg" parent="style_HeightWidthWW">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="android:textColor">@color/grey_color</item>
+    </style>
+
+    <style name="style_HeightWidthWW" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="text_signINUP_Login_Reg" parent="style_HeightWidthWW">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:onClick">onClickEvent</item>
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="android:padding">@dimen/dim_10</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+    <style name="style_edittext">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="android:textColor">@color/grey_color</item>
+    </style>
+
+    <style name="textview_14_black" parent="style_HeightWidthWW">
+        <item name="android:maxLines">1</item>
+
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="textview_12_black" parent="style_HeightWidthWW">
+
+        <item name="android:maxLines">1</item>
+
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="textview_16_black" parent="style_HeightWidthWW">
+
+        <item name="android:maxLines">1</item>
+
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="textview_14_grey" parent="style_HeightWidthWW">
+        <item name="android:maxLines">1</item>
+
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textColor">@color/grey_color</item>
+        <item name="android:textColorHint">@color/edittextbottom</item>
+    </style>
+    <style name="textview_8_white" parent="style_HeightWidthWW">
+        <item name="android:clickable">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:onClick">onClickEvent</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="textview_12_grey" parent="style_HeightWidthWW">
+
+        <item name="android:maxLines">1</item>
+
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="android:textColor">@color/grey_color</item>
+
+    </style>
+
+
+    <style name="textview_16_grey" parent="style_HeightWidthWW">
+
+        <item name="android:maxLines">1</item>
+
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:textColorHint">@color/edittextbottom</item>
+        <item name="android:textColor">@color/dashboard_grey</item>
+
+    </style>
+
+    <style name="edittext_14_grey" parent="style_HeightWidthWW">
+
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">@dimen/dim_5</item>
+        <item name="android:paddingBottom">@dimen/dim_5</item>
+        <item name="android:background">@drawable/edittext_background_white</item>
+
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:textColorHint">@color/edittextbottom</item>
+        <item name="android:textColor">@color/dashboard_grey</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+    </style>
+
+
+    <style name="edittext_12_grey" parent="style_HeightWidthWW">
+        <item name="android:clickable">true</item>
+         <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="android:textColorHint">@color/edittextbottom</item>
+        <item name="android:textColor">@color/dashboard_grey</item>
+        <item name="android:paddingTop">@dimen/dim_5</item>
+        <item name="android:paddingBottom">@dimen/dim_5</item>
+        <item name="android:background">@drawable/edittext_background_white</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+    </style>
+
+
+    <style name="edittext_16_grey" parent="style_HeightWidthWW">
+        <item name="android:clickable">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:textColorHint">@color/edittextbottom</item>
+        <item name="android:textColor">@color/grey_color</item>
+        <item name="android:paddingTop">@dimen/dim_5</item>
+        <item name="android:paddingBottom">@dimen/dim_5</item>
+        <item name="android:background">@drawable/edittext_background_white</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+    </style>
+
+    <style name="edittext_tab_grey" parent="style_HeightWidthWW">
+        <item name="android:clickable">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/font_20</item>
+        <item name="android:textColorHint">@color/edittextbottom</item>
+        <item name="android:textColor">@color/grey_color</item>
+        <item name="android:paddingTop">@dimen/dim_5</item>
+        <item name="android:paddingBottom">@dimen/dim_5</item>
+        <item name="android:background">@drawable/edittext_background_white</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+    </style>
+
+
+    <!--custom dialog style-->
+    <style name="DatePickerDialogTheme" parent="@style/Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:color">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

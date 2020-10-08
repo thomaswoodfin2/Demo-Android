@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include
+        android:id="@+id/layout_Header"
+        layout="@layout/item_header"
+        ></include>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imagess"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/user1"
+                android:layout_marginLeft="@dimen/dim_50"
+                android:clickable="true"
+                android:onClick="onClickEvent"
+                android:layout_gravity="center_vertical"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/edittextbottom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_dateContainer"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim_30"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_planData"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    >
+                    <TextView
+                        android:id="@+id/tv_nameLabel"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text="Plan Amount"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:textSize="@dimen/font_18"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_nameValue"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text="Start Date"
+                        android:textSize="@dimen/font_18"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_1"
+                    android:background="@color/notificationborder"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:id="@+id/view1"
+                    ></View>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_phone"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    >
+                    <TextView
+                        android:id="@+id/tv_phoneLabel"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text="Plan Amount"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:textSize="@dimen/font_18"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_phoneValue"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text="Start Date"
+                        android:textSize="@dimen/font_18"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_1"
+                    android:background="@color/notificationborder"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:id="@+id/view2"
+                    ></View>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_email"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    >
+                    <TextView
+                        android:id="@+id/tv_emailLabel"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text="Plan Amount"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:textSize="@dimen/font_18"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_emailValue"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text="Start Date"
+                        android:textSize="@dimen/font_18"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_1"
+                    android:background="@color/notificationborder"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:id="@+id/view3"
+                    ></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_timeframe"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    >
+                    <TextView
+                        android:id="@+id/tv_timeFrameLabel"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text="Plan Amount"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:textSize="@dimen/font_18"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_timeFrameValue"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text="Start Date"
+                        android:textSize="@dimen/font_18"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_1"
+                    android:background="@color/notificationborder"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:id="@+id/view4"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_time"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    >
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text=""
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:textSize="@dimen/font_18"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_timeValue"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text=""
+                        android:textSize="@dimen/font_18"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_1"
+                    android:background="@color/notificationborder"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:id="@+id/view6"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_company"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/dim_20"
+                    >
+                    <TextView
+                        android:id="@+id/tv_companyLabel"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text="Plan Amount"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:textSize="@dimen/font_18"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_companyValue"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_14_grey"
+                        android:textColor="@color/grey_color"
+                        android:text="NA"
+                        android:textSize="@dimen/font_18"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_1"
+                    android:background="@color/notificationborder"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:id="@+id/view5"
+                    android:visibility="gone"
+                    ></View>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                >
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+            <!--<ImageView-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:layout_width="250dp"-->
+                <!--android:layout_height="250dp"-->
+                <!--android:id="@+id/imagess"-->
+                <!--android:src="@mipmap/app_icon"-->
+                <!--/>-->
+        </LinearLayout>
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+</layout>

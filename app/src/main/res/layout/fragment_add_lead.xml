@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <include
+            android:id="@+id/layout_Header"
+            layout="@layout/item_header"
+            ></include>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_Header"
+            android:id="@+id/scrl_container"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:id="@+id/iv_imgProeprt"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:src="@mipmap/app_icon"-->
+                    <!--android:clickable="true"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:onClick="onClickEvent"-->
+                    <!--android:layout_marginRight="@dimen/dim_20"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--app:civ_border_width="1dp"-->
+                    <!--app:civ_border_color="@color/grey_color"-->
+                    <!--android:visibility="gone"-->
+                    <!--/>-->
+                <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="500dp"-->
+                    <!--android:id="@+id/preview"-->
+                    <!--android:background="#000000"-->
+                    <!--android:visibility="invisible"></FrameLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dim_15"
+                android:orientation="vertical"
+                android:id="@+id/ll_addlead"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/dim_20"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/et_edtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/edittext_tab_grey"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingBottom="@dimen/dim_8"
+                            android:paddingLeft="38dp"
+                            android:hint="@string/str_name"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="@dimen/dim_12"
+                        android:src="@mipmap/ic_sel_friends"
+
+                        android:id="@+id/iv_imgName"
+                        android:layout_alignBottom="@+id/input_layout_Name"
+
+                        />
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="@dimen/dim_0"
+                        android:layout_toRightOf="@+id/iv_imgName"
+                        android:background="@color/grey_color"
+
+                        android:layout_alignBottom="@+id/iv_imgName"
+                        />
+                </RelativeLayout>
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/input_layout_Name"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--&gt;-->
+                <!--<EditText-->
+                <!--android:id="@+id/et_edtName"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/edittext_14_grey"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:inputType="text"-->
+
+                <!--android:hint="@string/str_name"/>-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_20"
+                    android:layout_marginRight="20dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_Phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+
+                        android:layout_centerHorizontal="true"
+                        >
+                        <EditText
+                            android:id="@+id/et_edtPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/edittext_tab_grey"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal|numberPassword"
+                            android:maxLength="15"
+                            android:paddingBottom="@dimen/dim_8"
+                            android:paddingLeft="40dp"
+                            android:hint="@string/str_phone"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <ImageView
+                        android:layout_width="@dimen/dim_20"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/ic_phone1"
+                        android:layout_marginBottom="@dimen/dim_12"
+                        android:id="@+id/iv_imgPhone"
+                        android:layout_alignBottom="@+id/input_layout_Phone"
+
+                        />
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="@dimen/dim_0"
+                        android:layout_toRightOf="@+id/iv_imgPhone"
+                        android:background="@color/grey_color"
+
+                        android:layout_alignBottom="@+id/iv_imgPhone"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_20"
+                    >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/edtEmail"
+                            style="@style/edittext_tab_grey"
+                            android:paddingLeft="40dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/dim_8"
+                            android:gravity="center_vertical"
+                            android:hint="@string/str_email"
+                            android:imeOptions="actionDone"
+
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textStyle="normal"
+
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/ic_email"
+                        android:layout_alignBottom="@+id/input_layout_email"
+                        android:layout_marginBottom="@dimen/dim_12"
+                        android:id="@+id/iv_imgEmail"
+                        />
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/iv_imgEmail"
+                        android:background="@color/grey_color"
+                        android:layout_marginBottom="@dimen/dim_12"
+                        android:layout_alignBottom="@+id/input_layout_email"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_buyingtimeframe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/textview_16_grey"
+                    android:text="Buying Time Frame"
+                    android:layout_marginTop="@dimen/dim_30"
+                    />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg_buyingtimeframes"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dim_10"
+                    >
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_month1"
+                        android:text="0-3 Months"
+                        android:checked="true"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/grey_color"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_month2"
+                        android:text="3-6 Months"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/grey_color"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_month3"
+                        android:text="6+ Months"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/grey_color"
+                        />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dim_30"
+                    >
+                    <TextView
+                        android:id="@+id/tv_realEstate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_16_grey"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/str_add_lead_realestate"
+                        />
+
+                    <!--<Switch-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textOff="No"-->
+                        <!--android:id="@+id/switch_realestate"-->
+
+                        <!--android:textOn="Yes"-->
+                        <!--android:layout_marginLeft="@dimen/dim_20"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--/>-->
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rg_yesNo"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dim_5"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_yes"
+                            android:text="Yes"
+                            android:checked="true"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/grey_color"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_no"
+                            android:text="No"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/grey_color"
+                            />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_0"
+                    android:id="@+id/rl_companyName"
+                    >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_companyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/et_edtCompanyName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/edittext_tab_grey"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:paddingBottom="@dimen/dim_8"
+                            android:paddingLeft="40dp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_company"
+                        android:layout_alignBottom="@+id/input_layout_companyName"
+                        android:paddingBottom="@dimen/dim_15"
+                        android:id="@+id/iv_imgCompanyName"
+                        />
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/iv_imgCompanyName"
+                        android:background="@color/grey_color"
+                        android:layout_marginBottom="@dimen/dim_10"
+                        android:layout_alignBottom="@+id/input_layout_companyName"
+                        />
+                </RelativeLayout>
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginTop="@dimen/dim_20"-->
+                    <!--android:visibility="gone"-->
+                    <!--&gt;-->
+                    <!--<CheckBox-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:id="@+id/chk_tnc"-->
+                        <!--android:padding="0dp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_tnc"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--style="@style/textview_16_grey"-->
+                        <!--android:text="I agree to the "-->
+                        <!--android:layout_marginLeft="@dimen/dim_8"-->
+                        <!--android:clickable="true"-->
+                        <!--android:onClick="onClickEvent"-->
+                        <!--/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_tnc_blue"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--style="@style/textview_16_grey"-->
+                        <!--android:text="Terms of Service"-->
+                        <!--android:textColor="@color/primary_blue_color"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_and"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--style="@style/textview_16_grey"-->
+                        <!--android:text="and"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+
+                        <!--/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_privacy"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--style="@style/textview_16_grey"-->
+                        <!--android:text="Privacy Policy"-->
+                        <!--android:textColor="@color/primary_blue_color"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+                <Button
+                    android:id="@+id/bt_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/primary_btn_background"
+                    android:padding="@dimen/dim_8"
+                    android:clickable="true"
+                    android:onClick="onClickEvent"
+                    android:layout_marginTop="40dp"
+                    android:textSize="24sp"
+                    android:text="@string/str_submit"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="@dimen/dim_20"
+                    style="@style/primaryButton"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/ll_start"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:id="@+id/tv_welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:textSize="49dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    style="@style/textview_16_grey"
+                    android:layout_marginTop="130dp"
+                    />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClickEvent"
+                    style="@style/primaryButton"
+                    android:text="start"
+                    android:id="@+id/btn_start"
+                    android:paddingLeft="@dimen/dim_30"
+                    android:paddingRight="@dimen/dim_30"
+                    android:paddingTop="@dimen/dim_10"
+                    android:paddingBottom="@dimen/dim_10"
+                    android:textSize="30sp"
+                    android:background="@drawable/green_btn_background"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+
+                    android:layout_marginTop="@dimen/dim_40"
+                    >
+                    <!--<CheckBox-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:id="@+id/chk_tnc"-->
+                        <!--android:padding="0dp"-->
+                        <!--/>-->
+                    <TextView
+                        android:id="@+id/tv_clicking_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_16_grey"
+                        android:text="I agree to the "
+                        android:layout_marginLeft="@dimen/dim_8"
+                        android:clickable="true"
+                        android:onClick="onClickEvent"
+                        />
+                    <TextView
+                        android:id="@+id/tv_tnc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_16_grey"
+                        android:text="I agree to the "
+                        android:layout_marginLeft="@dimen/dim_8"
+                        android:clickable="true"
+                        android:onClick="onClickEvent"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_tnc_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_16_grey"
+                        android:text="Terms of Service"
+                        android:clickable="true"
+                        android:onClick="onClickEvent"
+                        android:textColor="@color/primary_blue_color"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_and"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_16_grey"
+                        android:text="and"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textview_16_grey"
+                        android:text="Privacy Policy"
+                        android:clickable="true"
+                        android:onClick="onClickEvent"
+                        android:textColor="@color/primary_blue_color"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:id="@+id/preview"
+                    android:background="#00000000"
+                    android:visibility="invisible"></FrameLayout>
+</RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

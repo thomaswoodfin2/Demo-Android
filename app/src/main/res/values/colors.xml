@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="primary_text_color">#f26722</color>
+    <!--<color name="primary_blue_color">#55c8f6</color>-->
+    <!--<color name="primary_blue_color">#3FCAF5</color>-->
+    <!--<color name="grey_color">#979797</color>-->
+    <color name="grey_color">#1e1e1e</color>
+    <color name="dashboard_grey">#1e1e1e</color>
+    <color name="red">#e81329</color>
+    <color name="light_red">#c4777f</color>
+    <color name="offline_light_red">#fcd5d9</color>
+    <color name="green">#00b100</color>
+    <color name="light_green">#98bf98</color>
+    <color name="spinnerItem">#AAAAAA</color>
+    <color name="editText">#AAAAAA</color>
+    <!--<color name="edittextbottom">#d1d1d1</color>-->
+    <color name="edittextbottom">#bbbbbb</color>
+    <color name="greynotification">#838383</color>
+
+    <!--<color name="notificationbackground">#f9f9f9</color>-->
+    <color name="notificationbackground">#eaeaea</color>
+    <color name="notificationborder">#cecece</color>
+    <color name="notificationphone">#7c7b7b</color>
+    <color name="notificationmap">#7d7d7d</color>
+    <color name="notificationdate">#919191</color>
+    <color name="buttonText">#EEEEEE</color>
+    <color name="headerText">#EEEEEE</color>
+    <!--<color name="colorPrimary">#3FCAF5</color>-->
+    <!--<color name="colorPrimaryDark">#3FCAF5</color>-->
+    <!--<color name="colorAccent">#3FCAF5</color>-->
+    <color name="primary_blue_color">#009dce</color>
+    <color name="colorPrimary">#009dce</color>
+    <color name="colorPrimaryDark">#009dce</color>
+    <color name="colorAccent">#009dce</color>
+
+    <color name="container">#f0f0f0</color>
+    <color name="appbg">#FAFAFA</color>
+    <color name="headerbg">#f0f0f0</color>
+    <color name="footerbg">#474749</color>
+    <color name="friendsgrey">#868686</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_Header"
+            layout="@layout/item_header" />
+
+        <LinearLayout
+            android:id="@+id/ll_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dim_15"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="@dimen/dim_50">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_imgProeprty"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:visibility="invisible"
+                android:onClick="onClickEvent"
+                android:src="@mipmap/app_icon"
+                app:civ_border_color="@color/grey_color"
+                app:civ_border_width="1dp" />
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/input_layout_Name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--&gt;-->
+            <!--<EditText-->
+            <!--android:id="@+id/et_edtName"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/edittext_14_grey"-->
+            <!--android:imeOptions="actionNext"-->
+            <!--android:inputType="text"-->
+
+            <!--android:hint="@string/str_name"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <TextView
+                android:id="@+id/tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_15"
+                android:text="Add Propert Image"
+                android:visibility="invisible"
+                android:textColor="@color/grey_color"
+                android:textSize="@dimen/dim_20" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/acTxt_CityState"
+                        style="@style/edittext_16_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Location"
+                        android:imeOptions="actionNext"
+                        android:inputType="textAutoComplete|textAutoCorrect"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="@dimen/dim_5"
+                        android:paddingBottom="@dimen/dim_8" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/iv_imgLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/input_layout_location"
+                    android:paddingBottom="@dimen/dim_10"
+                    android:src="@mipmap/ic_loaction1" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/iv_imgLocation"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:layout_toRightOf="@+id/iv_imgLocation"
+                    android:background="@color/grey_color" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/bt_signup"
+                style="@style/primaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/primary_btn_background"
+                android:clickable="true"
+                android:onClick="onClickEvent"
+                android:padding="@dimen/dim_8"
+                android:text="@string/str_create"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

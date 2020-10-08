@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_blue_color"
+    android:minHeight="50dp"
+
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dim_0">
+
+        <ImageView
+            android:id="@+id/iv_imgMenu_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickEvent"
+            android:paddingLeft="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_10"
+            android:paddingRight="@dimen/dim_5"
+            android:paddingBottom="@dimen/dim_10"
+            android:src="@mipmap/ic_back" />
+
+        <ImageView
+            android:id="@+id/iv_NotificationBadge"
+            android:layout_width="@dimen/dim_10"
+            android:layout_height="@dimen/dim_10"
+            android:layout_gravity="top|right"
+            android:layout_margin="@dimen/dim_5"
+
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_txtTitle"
+        style="@style/textview_16_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_20" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/dim_0">
+
+        <ImageView
+            android:id="@+id/iv_imgSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim_5"
+            android:clickable="true"
+            android:onClick="onClickEvent"
+
+            android:paddingLeft="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_10"
+            android:paddingRight="@dimen/dim_10"
+            android:paddingBottom="@dimen/dim_10"
+            android:src="@mipmap/ic_user" />
+
+        <TextView
+            android:id="@+id/btn_addNew"
+            style="@style/textview_16_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:onClick="onClickEvent"
+            android:paddingLeft="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_10"
+            android:paddingRight="@dimen/dim_20"
+            android:paddingBottom="10dp"
+            android:text="Add New"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_imgSearch"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="onViewClick"-->
+        <!--android:padding="@dimen/dim_10"-->
+        <!--android:src="@mipmap/ic_search"-->
+        <!--android:visibility="gone"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_UnreadBadge"-->
+        <!--android:layout_width="@dimen/dim_10"-->
+        <!--android:layout_height="@dimen/dim_10"-->
+        <!--android:layout_gravity="top|right"-->
+        <!--android:layout_margin="@dimen/dim_5"-->
+        <!--android:src="@drawable/red_circle_drawable"-->
+        <!--android:visibility="gone"/>-->
+
+        <!--</FrameLayout>-->
+
+    </LinearLayout>
+</RelativeLayout>

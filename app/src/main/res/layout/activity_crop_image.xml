@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_crop_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <TextView
+        android:id="@+id/txt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dim_5"
+        android:text="@string/str_resize_desc"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_16"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/frame_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_desc">
+
+        <ProgressBar
+            android:id="@+id/pb_cropAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/dim_10">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/primaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:onClick="onViewClick"
+            android:text="@string/str_cancel" />
+
+        <ImageView
+            android:id="@+id/iv_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white"
+            android:contentDescription="@string/str_crop_image_desc"
+            android:onClick="onViewClick"
+            android:padding="@dimen/dim_5"
+            android:src="@mipmap/ic_refres" />
+
+        <Button
+            android:id="@+id/btn_done"
+            style="@style/primaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:onClick="onViewClick"
+            android:text="@string/str_done" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_zoomInst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:contentDescription="@string/str_indicate_touser"
+        android:src="@mipmap/ic_zoom"
+        android:visibility="gone" />
+</RelativeLayout>

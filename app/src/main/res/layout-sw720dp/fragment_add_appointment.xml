@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_Header"
+            layout="@layout/item_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dim_100"
+                android:layout_marginTop="@dimen/dim_30"
+                android:layout_marginRight="@dimen/dim_100"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_edtName"
+                            style="@style/edittext_16_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/str_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:paddingLeft="38dp"
+                            android:paddingBottom="@dimen/dim_8" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_imgName"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/input_layout_Name"
+
+                        android:layout_marginBottom="@dimen/dim_8"
+                        android:src="@mipmap/ic_sel_friends"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/iv_imgName"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="@dimen/dim_0"
+                        android:layout_toRightOf="@+id/iv_imgName"
+
+                        android:background="@color/grey_color" />
+                </RelativeLayout>
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/input_layout_Name"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--&gt;-->
+                <!--<EditText-->
+                <!--android:id="@+id/et_edtName"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/edittext_14_grey"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:inputType="text"-->
+
+                <!--android:hint="@string/str_name"/>-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_Phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toEndOf="@+id/ccp"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_edtPhone"
+                            style="@style/edittext_16_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/str_phone"
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="15"
+                            android:paddingLeft="40dp"
+                            android:paddingBottom="@dimen/dim_8" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_countryPreference="US"
+                        app:ccp_defaultNameCode="US"
+                        app:ccp_defaultPhoneCode="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_imgPhone"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/input_layout_Phone"
+                        android:layout_marginBottom="@dimen/dim_8"
+                        android:layout_toEndOf="@+id/ccp"
+                        android:src="@mipmap/ic_phone1" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/iv_imgPhone"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="@dimen/dim_0"
+                        android:layout_toRightOf="@+id/iv_imgPhone"
+                        android:background="@color/grey_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/acTxt_CityState"
+                            style="@style/edittext_16_grey"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Location"
+                            android:imeOptions="actionNext"
+                            android:inputType="textAutoComplete|textAutoCorrect"
+                            android:paddingLeft="40dp"
+                            android:paddingTop="@dimen/dim_5"
+
+                            android:paddingBottom="@dimen/dim_8" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_imgLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/input_layout_location"
+                        android:paddingBottom="@dimen/dim_10"
+                        android:src="@mipmap/ic_loaction1"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/iv_imgLocation"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="@dimen/dim_8"
+                        android:layout_toRightOf="@+id/iv_imgLocation"
+
+                        android:background="@color/grey_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:background="@drawable/edittext_background_white"
+                    android:clickable="true"
+                    android:onClick="onClickEvent">
+
+                    <TextView
+                        android:id="@+id/tv_Date"
+                        style="@style/textview_16_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:layout_marginBottom="@dimen/dim_10"
+                        android:clickable="false"
+
+                        android:hint="@string/str_select_date"
+                        android:textColorHint="#a7a7a7"></TextView>
+
+                    <ImageView
+                        android:id="@+id/iv_imgDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/dim_0"
+
+                        android:src="@mipmap/ic_date"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:layout_toRightOf="@+id/iv_imgDate"
+                        android:background="@color/grey_color"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:background="@drawable/edittext_background_white"
+                    android:clickable="true"
+                    android:onClick="onClickEvent">
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/textview_16_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:layout_marginBottom="@dimen/dim_10"
+                        android:clickable="false"
+                        android:hint="@string/str_select_time"
+
+                        android:textColorHint="#a7a7a7"></TextView>
+
+                    <ImageView
+                        android:id="@+id/iv_imgTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/dim_0"
+
+                        android:src="@mipmap/ic_time"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="8dp"
+
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:layout_toRightOf="@+id/iv_imgTime"
+                        android:background="@color/grey_color"
+
+                        />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/bt_signup"
+                    style="@style/primaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/primary_btn_background"
+                    android:clickable="true"
+                    android:onClick="onClickEvent"
+                    android:padding="@dimen/dim_8"
+                    android:text="@string/str_submit"
+
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

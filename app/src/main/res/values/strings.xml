@@ -1,0 +1,231 @@
+<resources>
+    <string name="app_name">PinPoint</string>
+
+    <!--<string name="google_map_api_key">AIzaSyBbqHNfEMRujt3pupWIHejyBWj2F6OzyjU</string>-->
+    <string name="google_map_api_key">AIzaSyCB7NbbeedLS1shi2eHhicMQpDL3sJ5Uus</string>
+
+    <string name="fabric_api_key">e054d6c31b11eddd15b63d30cf0c8141acc4eea4</string>
+    <!-- New Key-->
+    <!--AIzaSyCB7NbbeedLS1shi2eHhicMQpDL3sJ5Uus-->
+
+    <!-- Old Key-->
+    <!--AIzaSyDNNDL9Hj17TmPGIDW8p_gs55hbw16p4-w-->
+    <string name="errorMsgInternetSlow">Oops, Something went wrong, Please try again Later</string>
+    <string name="errorMsgRequestError">It seems that there is some problem with request. Please try again.</string>
+    <string name="errorMsgShortMaintenanceBreak">Oops! We\'re updating some details. We\'ll be back soon. Sorry to let you down!</string>
+
+    <string name="lblYes">lblYes</string>
+    <string name="lblNo">lblNo</string>
+    <string name="lblUpdate">lblUpdate</string>
+    <string name="lblOk">lblOk</string>
+    <string name="lblNotNow">lblNotNow</string>
+    <string name="lblCancel">lblCancel</string>
+    <string name="lblRetry">lblRetry</string>
+
+    <!--Sign Up and LoginScreen-->
+    <string name="str_enter_name">str_enter_name</string>
+    <string name="str_enter_email">str_enter_email</string>
+    <string name="str_enter_phone">str_enter_phone</string>
+    <string name="str_valid_phone">str_valid_phone</string>
+    <string name="str_enter_pwd">str_enter_pwd</string>
+    <string name="str_valid_email">str_valid_email</string>
+    <string name="str_enter_company">str_enter_company</string>
+
+    <string name="str_email">str_email</string>
+    <string name="str_password">str_password</string>
+    <string name="str_name">str_name</string>
+    <string name="str_oldpwd">str_oldpwd</string>
+    <string name="str_newpwd">str_newpwd</string>
+    <string name="str_confirm_passowrd">str_confirm_passowrd</string>
+    <string name="str_company_name">str_company_name</string>
+    <string name="str_phone">str_phone</string>
+    <string name="str_error_validpwd">str_error_validpwd</string>
+    <string name="str_confirmpassword_validation">str_confirmpassword_validation</string>
+    <string name="str_forgot_password">str_forgot_password</string>
+    <string name="str_signup">str_signup</string>
+    <string name="str_update">str_update</string>
+    <string name="str_dnt_have_ac">str_dnt_have_ac</string>
+    <!--<string name="str_Login">Login</string>-->
+    <string name="str_submit">str_submit</string>
+    <string name="str_facebook_login">str_facebook_login</string>
+    <string name="str_cancel">str_cancel</string>
+    <string name="facebook_app_id">1766158913422648</string>
+    <string name="str_logo_text">str_logo_text</string>
+    <string name="str_signup_now">str_signup_now</string>
+    <string name="str_or">str_or</string>
+    <string name="str_tnc_line">str_tnc_line</string>
+    <string name="str_terms_of_service">str_terms_of_service</string>
+    <string name="str_and">str_and</string>
+    <string name="str_privacy_policy">str_privacy_policy</string>
+    <string name="str_forgott_password">str_forgott_password</string>
+    <string name="str_dismiss">str_dismiss</string>
+    <string name="str_firebase_authentication">str_firebase_authentication</string>
+    <string name="str_no_record_found">str_no_record_found</string>
+    <string name="str_selectDate">str_selectDate</string>
+    <string name="str_enter_location">str_enter_location</string>
+    <string name="str_valid_location">str_valid_location</string>
+    <string name="str_select_date">str_select_date</string>
+    <string name="str_select_time">str_select_time</string>
+    <string name="str_new_password">str_new_password</string>
+    <string name="str_call_911">str_call_911</string>
+    <string name="str_enter_time">str_enter_time</string>
+    <string name="str_internet_availability">str_internet_availability</string>
+    <string name="str_ok">str_ok</string>
+    <string name="str_request_code">str_request_code</string>
+    <string name="str_verification_code">str_verification_code</string>
+    <string name="str_app_name">str_app_name</string>
+
+
+    <!--crop image activity-->
+    <string name="str_resize_desc">str_resize_desc</string>
+    <string name="str_crop_image_desc">str_crop_image_desc</string>
+    <string name="str_indicate_touser">str_indicate_touser</string>
+    <string name="str_done">str_done</string>
+    <string name="str_upload_document">str_upload_document</string>
+    <string name="str_upload_Profile">str_upload_Profile</string>
+    <string name="str_select_file">str_select_file</string>
+    <string name="str_select_profile_pic">str_select_profile_pic</string>
+    <string name="str_open_gallery">str_open_gallery</string>
+    <string name="str_click_photo">str_click_photo</string>
+    <string name="str_err_valid_file_format">str_err_valid_file_format</string>
+    <string name="str_msg_image_pick_issue">str_msg_image_pick_issue</string>
+    <string name="str_ask_logout">str_ask_logout</string>
+    <string name="str_view_profile">str_view_profile</string>
+    <string name="str_edit_phone">str_edit_phone</string>
+
+    <string name="str_change_password">str_change_password</string>
+    <string name="str_logout">str_logout</string>
+    <string name="str_create">str_create</string>
+    <string name="str_add_lead_realestate">str_add_lead_realestate</string>
+    <string name="str_nameandcompanyName">str_nameandcompanyName</string>
+    <string name="str_friends">str_friends</string>
+    <string name="str_appointments">str_appointments</string>
+    <string name="str_enter_currentpassword">str_enter_currentpassword</string>
+    <string name="str_enter_new_password">str_enter_new_password</string>
+    <string name="str_not_received_appointmentr">str_not_received_appointmentr</string>
+    <string name="str_not_received_friend">You have received a friend request from </string>
+    <string name="str_not_panic"> has pressed the panic button</string>
+    <string name="str_not_accept_appointment"> Accepted your Appointment</string>
+    <string name="str_not_accept_friend"> Accepted Your Friend Request</string>
+    <string name="str_select_notificatio">Please long press on notification and then press delete button. you can select multiple notifications at a time.</string>
+    <string name="str_open_settings">str_open_settings</string>
+    <string name="str_hostexception">str_hostexception</string>
+    <string name="str_select_futuredate">str_select_futuredate</string>
+    <string name="str_select_appointment_date">str_select_appointment_date</string>
+    <string name="str_select_appointment_time">str_select_appointment_time</string>
+    <string name="str_friend_location">str_friend_location</string>
+    <string name="str_appointment_location">str_appointment_location</string>
+    <string name="str_panic_friend_location">str_panic_friend_location</string>
+    <string name="buy_string">Buy A Click Successfully</string>
+    <string name="buyfailed_string">Error in Buying Click</string>
+    <string name="click_string">Click Me</string>
+    <string name="str_open_house_registry">str_open_house_registry</string>
+    <string name="str_enter_address">str_enter_address</string>
+    <string name="str_error">str_error</string>
+    <string name="str_property_delete_confirm">str_property_delete_confirm</string>
+    <string name="str_appointment_tracking_error">str_appointment_tracking_error</string>
+    <string name="str_appointment_tracking_notstarted">str_appointment_tracking_notstarted</string>
+    <string name="str_enter_verificationcode">str_enter_verificationcode</string>
+    <string name="slow_connection">slow_connection</string>
+    <string name="short_maintenance">short_maintenance</string>
+    <string name="request_problem">request_problem</string>
+    <string name="str_login">str_login</string>
+    <string name="str_accept">str_accept</string>
+    <string name="str_deny">str_deny</string>
+    <string name="str_locate">str_locate</string>
+    <string name="str_resend">str_resend</string>
+    <string name="str_add_friend">str_add_friend</string>
+    <string name="str_fail_dialog_header">str_fail_dialog_header</string>
+    <string name="str_validation_dialog_header">str_validation_dialog_header</string>
+    <string name="str_send">str_send</string>
+    <string name="str_enter_otp">str_enter_otp</string>
+    <string name="str_signup_header">str_signup_header</string>
+    <string name="str_phone_authentication">str_phone_authentication</string>
+    <string name="str_send_otp">str_send_otp</string>
+    <string name="str_need_callpersmission">str_need_callpersmission</string>
+    <string name="str_alerts">str_alerts</string>
+    <string name="str_settings">str_settings</string>
+    <string name="str_back_again">str_back_again</string>
+    <string name="str_appointments_header">str_appointments_header</string>
+    <string name="str_add_appointment">str_add_appointment</string>
+    <string name="str_notifications">str_notifications</string>
+    <string name="str_friends_header">str_friends_header</string>
+    <string name="str_confirm_delete_friend">str_confirm_delete_friend</string>
+    <string name="str_confirm_delete_appointment">str_confirm_delete_appointment</string>
+    <string name="str_deny_appointment">str_deny_appointment</string>
+    <string name="str_confirm_resend_friendrequest">str_confirm_resend_friendrequest</string>
+    <string name="str_confirm_deny">str_confirm_deny</string>
+    <string name="str_settings_header">str_settings_header</string>
+    <string name="str_extend_subscription">str_extend_subscription</string>
+    <string name="str_view_leads_header">str_view_leads_header</string>
+    <string name="str_buying_timeframe">str_buying_timeframe</string>
+    <string name="str_real_estate">str_real_estate</string>
+    <string name="str_name_or_company">str_name_or_company</string>
+    <string name="str_accept_tnc">str_accept_tnc</string>
+    <string name="str_click_property_photo">str_click_property_photo</string>
+    <string name="str_select_property_pic">str_select_property_pic</string>
+    <string name="str_verify_code">str_verify_code</string>
+    <string name="str_clicking_start">str_clicking_start</string>
+    <string name="str_welcome">str_welcome</string>
+    <string name="str_lead_delete_confirm">str_lead_delete_confirm</string>
+    <string name="str_view">str_view</string>
+    <string name="str_select_image">str_select_image</string>
+    <string name="str_company">str_company</string>
+    <string name="str_name1">str_name1</string>
+    <string name="str_phone1">str_phone1</string>
+    <string name="str_phone_number">str_phone_number</string>
+    <string name="str_email1">str_email1</string>
+    <string name="str_03months">str_03months</string>
+    <string name="str_36months">str_36months</string>
+    <string name="str_6months">str_6months</string>
+    <string name="str_lead_details">str_lead_details</string>
+    <string name="str_leads">str_leads</string>
+    <string name="str_client_location">str_client_location</string>
+    <string name="str_subscribe">str_subscribe</string>
+    <string name="str_fail_subscribe">str_fail_subscribe</string>
+    <string name="str_location_not_found">str_location_not_found</string>
+    <string name="str_choose_callapp">str_choose_callapp</string>
+    <string name="str_please_subscribe">str_please_subscribe</string>
+    <string name="str_subscribe_button">str_subscribe_button</string>
+    <string name="str_user_offline">str_user_offline</string>
+    <string name="str_cancel_subscription">str_cancel_subscription</string>
+    <string name="str_startdate">str_startdate</string>
+    <string name="str_expirydate">str_expirydate</string>
+    <string name="str_canceldate">str_canceldate</string>
+    <string name="str_cancel_subscription_message">str_cancel_subscription_message</string>
+    <string name="str_ask_cancel_subscription">str_ask_cancel_subscription</string>
+    <string name="str_plan_amount">str_plan_amount</string>
+    <string name="str_goto_alerts">str_goto_alerts</string>
+    <string name="no_camera_found">no_camera_found</string>
+    <string name="str_addnew">str_addnew</string>
+    <string name="str_add_property_image">str_add_property_image</string>
+    <string name="str_user_offline_message">str_user_offline_message</string>
+    <string name="str_enter_location_label">str_enter_location_label</string>
+    <string name="str_loading">str_loading</string>
+    <string name="str_get_direction">str_get_direction</string>
+    <string name="str_request_location_permission">str_request_location_permission</string>
+    <string name="str_delete">str_delete</string>
+    <string name="str_panic_tracking_error">str_panic_tracking_error</string>
+    <string name="str_code_sent">str_code_sent</string>
+    <string name="str_read_terms_policy">str_read_terms_policy</string>
+    <string name="str_server_error">str_server_error</string>
+    <string name="str_appointment_location_label">str_appointment_location_label</string>
+    <string name="str_united_states">str_united_states</string>
+    <string name="str_lead_time">str_lead_time</string>
+    <string name="str_enable_gps">str_enable_gps</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+    <string-array name="tabs_types_friends">
+        <item>All</item>
+        <!-- 02-25-2020 Removed by TBL. Just a quick adjustment to make 2 tabs into 1 -->
+        <!--
+        <item>Sent </item>
+        <item>Received</item>
+        -->
+    </string-array>
+    <string-array name="tabs_types_appointments">
+        <item>Sent </item>
+        <item>Received</item>
+    </string-array>
+</resources>

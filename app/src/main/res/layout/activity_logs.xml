@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:background="@color/primary_blue_color">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_0"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/iv_imgMenu_Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickEvent"
+                android:paddingTop="@dimen/dim_10"
+                android:paddingBottom="@dimen/dim_10"
+                android:paddingRight="@dimen/dim_5"
+                android:paddingLeft="@dimen/dim_10"
+                android:src="@mipmap/ic_back"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            style="@style/textview_16_black"
+            android:text="Logs"
+            android:textSize="@dimen/font_20"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/dim_0"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/iv_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dim_5"
+                android:onClick="onClickEvent"
+                android:clickable="true"
+                android:paddingTop="@dimen/dim_10"
+                android:paddingBottom="@dimen/dim_10"
+                android:paddingRight="@dimen/dim_5"
+                android:paddingLeft="@dimen/dim_10"
+                android:src="@mipmap/ic_delete_white"
+                />
+
+            <!--<FrameLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_imgSearch"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="onViewClick"-->
+            <!--android:padding="@dimen/dim_10"-->
+            <!--android:src="@mipmap/ic_search"-->
+            <!--android:visibility="gone"/>-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_UnreadBadge"-->
+            <!--android:layout_width="@dimen/dim_10"-->
+            <!--android:layout_height="@dimen/dim_10"-->
+            <!--android:layout_gravity="top|right"-->
+            <!--android:layout_margin="@dimen/dim_5"-->
+            <!--android:src="@drawable/red_circle_drawable"-->
+            <!--android:visibility="gone"/>-->
+
+            <!--</FrameLayout>-->
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

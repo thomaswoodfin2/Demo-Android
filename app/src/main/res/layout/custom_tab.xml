@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="@dimen/dim_2"
+    >
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/icon"
+    android:layout_marginTop="@dimen/dim_5"
+    android:layout_centerHorizontal="true"
+     />
+    <TextView
+        android:id="@+id/tv_txtMenuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="Appointments"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+         style="@style/textview_8_white"
+        android:clickable="false"
+
+        />
+    <ImageView
+        android:layout_width="0.5dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_whiteLine"
+        android:visibility="gone"
+        android:clickable="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        />
+    <Button
+        android:layout_width="@dimen/dim_15"
+        android:layout_height="@dimen/dim_15"
+        android:id="@+id/bt_NotificationCount"
+        android:background="@drawable/panic_cricle"
+        android:text="1"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dim_5"
+        android:textColor="@color/white"
+        android:layout_alignEnd="@+id/icon"
+        android:textSize="@dimen/font_8"
+        android:textAllCaps="false"
+        android:clickable="false"
+        />
+</RelativeLayout>
+

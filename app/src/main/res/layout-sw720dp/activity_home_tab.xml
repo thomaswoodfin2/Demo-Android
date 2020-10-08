@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<include
+    android:id="@+id/layout_Header"
+    layout="@layout/item_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ></include>
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+        <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/toolbar"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="?attr/actionBarSize"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="?attr/colorPrimary"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:layout_scrollFlags="scroll|enterAlways"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />&ndash;&gt;-->
+
+      <!---->
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/tabs"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/layout_Header"
+        android:layout_toRightOf="@+id/tabs"
+
+        />
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:background="@color/primary_blue_color"
+        android:weightSum="6"
+        android:layout_below="@+id/layout_Header"
+
+        >
+        <LinearLayout
+            android:id="@+id/ll_appointment"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dim_2"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:clickable="true"
+            android:onClick="onClickEvent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_appointment"
+                android:src="@mipmap/ic_appoinmant"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_5"
+                />
+            <TextView
+                android:id="@+id/tv_txtAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Appointments"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/icon"
+                android:layout_centerHorizontal="true"
+                style="@style/textview_8_white"
+                android:clickable="false"
+
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/iv_whiteLine"
+
+                android:visibility="gone"
+                android:clickable="false"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_openhouse"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dim_2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="onClickEvent"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/iv_openHouse"
+                android:src="@drawable/home"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_5"
+                />
+            <TextView
+                android:id="@+id/tv_txtOpenHouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open House"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/icon"
+                android:layout_centerHorizontal="true"
+                style="@style/textview_8_white"
+                android:clickable="false"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_alerts"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dim_2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="onClickEvent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                >
+                <Button
+                    android:layout_width="@dimen/dim_20"
+                    android:layout_height="@dimen/dim_20"
+                    android:id="@+id/bt_NotificationCount"
+                    android:background="@drawable/panic_cricle"
+                    android:text="1"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/dim_10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_8"
+                    android:textAllCaps="false"
+                    android:clickable="false"
+
+                    android:layout_alignParentRight="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_alerts"
+                    android:src="@mipmap/ic_notyfy"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_txtalerts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alerts"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/iv_alerts"
+                    android:layout_centerHorizontal="true"
+                    style="@style/textview_8_white"
+                    android:clickable="false"
+
+                    />
+            </RelativeLayout>
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/iv_alerts"-->
+                <!--android:src="@mipmap/ic_notyfy"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="@dimen/dim_5"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_txtalerts"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Alerts"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_below="@+id/icon"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--style="@style/textview_8_white"-->
+                <!--android:clickable="false"-->
+
+                <!--/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_friends"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dim_2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="onClickEvent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_friends"
+                android:src="@mipmap/ic_friends"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_5"
+                />
+            <TextView
+                android:id="@+id/tv_txtFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/icon"
+                android:layout_centerHorizontal="true"
+                style="@style/textview_8_white"
+                android:clickable="false"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Settings"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dim_2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="onClickEvent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_Settings"
+                android:src="@mipmap/ic_setting"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_5"
+                />
+            <TextView
+                android:id="@+id/tv_txtSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/icon"
+                android:layout_centerHorizontal="true"
+                style="@style/textview_8_white"
+                android:clickable="false"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Logout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dim_2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="onClickEvent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_l"
+                android:src="@mipmap/ic_setting"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_5"
+                />
+            <TextView
+                android:id="@+id/tv_txtLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/icon"
+                android:layout_centerHorizontal="true"
+                style="@style/textview_8_white"
+                android:clickable="false"
+
+                />
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_panic"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="@dimen/dim_2"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:clickable="true"-->
+            <!--android:onClick="onClickEvent"-->
+            <!--&gt;-->
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/iv_panic"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@mipmap/ic_notyfy"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="@dimen/dim_5"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--<Button-->
+                <!--android:layout_width="55dp"-->
+                <!--android:layout_height="55dp"-->
+                <!--android:id="@+id/icon"-->
+                <!--android:background="@drawable/panic_cricle"-->
+                <!--android:text="Panic"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/font_14"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:clickable="false"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+</RelativeLayout>
+</layout>

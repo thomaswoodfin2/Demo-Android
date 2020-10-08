@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dim_10"
+    android:paddingRight="@dimen/dim_10"
+    android:paddingTop="@dimen/dim_10"
+    android:paddingBottom="4dp"
+    android:background="@color/white"
+    >
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_imgProfile"-->
+        <!--android:layout_width="105dp"-->
+        <!--android:layout_height="105dp"-->
+        <!--android:src="@drawable/user1"-->
+        <!--/>-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_imgProfile"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:src="@drawable/user1"
+        android:clickable="true"
+        android:onClick="onClickEvent"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/edittextbottom"
+        />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dim_20"
+    >
+        <!--Name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+        <ImageView
+            android:id="@+id/iv_imgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_username"
+            android:layout_gravity="center"
+          />
+
+        <TextView
+            android:id="@+id/tv_Name"
+            style="@style/textview_16_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="User Name "
+          />
+        </LinearLayout>
+
+    <!--Email-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_email"
+        android:layout_marginTop="@dimen/dim_5"
+        >
+        <ImageView
+            android:id="@+id/iv_imgEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_imgName"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_email1"
+          />
+
+        <TextView
+            android:id="@+id/tv_Email"
+            style="@style/textview_12_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/friendsgrey"
+            android:layout_marginLeft="8dp"
+            android:text="User Name "
+            android:top="@+id/iv_imgName"
+             />
+
+    </LinearLayout>
+
+
+    <!--Email-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dim_5"
+        >
+        <ImageView
+            android:id="@+id/iv_imgCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_phone"
+
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            style="@style/textview_12_black"
+            android:text="+125665446"
+           android:layout_gravity="center"
+            />
+    </LinearLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:background="@color/notificationborder"
+          />
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="right"-->
+
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_imgLocation"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/dim_5"-->
+            <!--android:layout_gravity="bottom"-->
+
+            <!--android:paddingLeft="@dimen/dim_5"-->
+            <!--android:paddingRight="@dimen/dim_5"-->
+            <!--android:paddingTop="@dimen/dim_10"-->
+            <!--android:src="@mipmap/ic_location"-->
+            <!--android:onClick="onClickEvent"-->
+            <!--android:clickable="true"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_imgLine"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:background="@color/edittextbottom"-->
+            <!--android:layout_marginLeft="@dimen/dim_5"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/dim_10"-->
+
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_imgDelete"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/ic_delete"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:onClick="onClickEvent"-->
+            <!--android:layout_marginLeft="@dimen/dim_5"-->
+            <!--android:paddingLeft="@dimen/dim_5"-->
+            <!--android:paddingRight="@dimen/dim_0"-->
+            <!--android:paddingTop="@dimen/dim_10"-->
+
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_buttons"
+        android:gravity="right|bottom"
+        android:layout_gravity="right|bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dim_5"
+        >
+        <Button
+            android:id="@+id/bt_Locate"
+            android:layout_width="@dimen/dim_60"
+            android:layout_height="40dp"
+            android:text="Locate"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/font_12"
+            style="@style/optionsButton"
+            android:textAllCaps="false"
+            android:onClick="onClickEvent"
+            android:clickable="true"
+            android:background="@drawable/primary_btn_rounded_background"
+            />
+        <ImageView
+            android:id="@+id/iv_imgLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_location"
+            android:onClick="onClickEvent"
+            android:layout_toLeftOf="@+id/iv_imgLine"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dim_5"
+            android:paddingLeft="@dimen/dim_5"
+            android:paddingRight="@dimen/dim_0"
+            android:paddingTop="@dimen/dim_5"
+            />
+        <ImageView
+            android:id="@+id/iv_imgLine"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/edittextbottom"
+            android:layout_marginLeft="@dimen/dim_8"
+            android:layout_marginTop="@dimen/dim_2"
+            android:layout_toLeftOf="@+id/iv_imgDelete"
+            />
+        <ImageView
+            android:id="@+id/iv_imgDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_delete"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:onClick="onClickEvent"
+            android:paddingLeft="@dimen/dim_5"
+            android:layout_marginLeft="@dimen/dim_5"
+            android:paddingRight="@dimen/dim_0"
+            android:paddingTop="@dimen/dim_0"
+            android:layout_gravity="center_vertical"
+            />
+        <Button
+            android:id="@+id/bt_accept"
+            android:layout_width="@dimen/dim_60"
+            android:layout_height="40dp"
+            android:text="Accept"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/font_12"
+            android:layout_marginLeft="@dimen/dim_10"
+            style="@style/optionsButton"
+            android:textAllCaps="false"
+            android:onClick="onClickEvent"
+            android:clickable="true"
+            android:background="@drawable/green_btn_background"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+        <View
+            android:id="@+id/view_Bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/edittextbottom"
+            /></LinearLayout>
+</layout>

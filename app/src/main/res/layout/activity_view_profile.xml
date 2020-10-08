@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+
+        >
+
+        <include
+            android:id="@+id/layout_Header"
+            layout="@layout/item_header"></include>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_imgSignup"
+                android:layout_margin="@dimen/dim_10"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dim_20">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_imgSignup"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:onClick="onClickEvent"
+                    android:src="@drawable/user1"
+                    app:civ_border_color="@color/grey_color"
+                    app:civ_border_width="0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_30"
+                    android:background="@drawable/profile_view_background"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_friends"
+                        android:layout_width="@dimen/dim_0"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onClickEvent"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dim_10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/ic_profile_friends" />
+
+                        <TextView
+                            android:id="@+id/tv_Friends"
+                            style="@style/textview_14_grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center|left"
+                            android:text="@string/str_friends" />
+
+                        <TextView
+                            android:id="@+id/tv_Friends_Count"
+                            style="@style/textview_14_grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center|left"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dim_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/edittextbottom"></View>
+
+                    <LinearLayout
+                        android:id="@+id/ll_appointment"
+                        android:layout_width="@dimen/dim_0"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onClickEvent"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dim_10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/ic_date" />
+
+                        <TextView
+                            android:id="@+id/tv_Appointment"
+                            style="@style/textview_14_grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center|left"
+                            android:text="@string/str_appointments" />
+
+                        <TextView
+                            android:id="@+id/tv_Appointment_Count"
+                            style="@style/textview_14_grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center|left"
+                            android:text="" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_20">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/et_edtName"
+                            style="@style/edittext_16_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingLeft="40dp"
+                            android:paddingBottom="@dimen/dim_10" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_imgName"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@mipmap/ic_sel_friends" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/input_layout_Name"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginBottom="@dimen/dim_8"
+                        android:layout_toRightOf="@+id/iv_imgName"
+                        android:background="@color/grey_color" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/et_edtEmail"
+                            style="@style/edittext_16_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+
+                            android:paddingLeft="40dp"
+                            android:paddingBottom="@dimen/dim_10"
+                            android:textStyle="normal"
+
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_imgEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/dim_10"
+                        android:src="@mipmap/ic_email" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/input_layout_email"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="@dimen/dim_8"
+                        android:layout_toRightOf="@+id/iv_imgEmail"
+                        android:background="@color/grey_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_companyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/et_edtCompanyName"
+                            style="@style/edittext_16_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:paddingLeft="40dp"
+                            android:paddingBottom="@dimen/dim_10" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_imgCompanyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/dim_10"
+                        android:src="@mipmap/ic_company" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/input_layout_companyName"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="@dimen/dim_8"
+                        android:layout_toRightOf="@+id/iv_imgCompanyName"
+                        android:background="@color/grey_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_Phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_edtPhone"
+                            style="@style/edittext_14_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:inputType="none"
+                            android:maxLength="15"
+                            android:paddingLeft="40dp"
+                            android:paddingBottom="@dimen/dim_10" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_imgPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/input_layout_Phone"
+                        android:layout_marginBottom="@dimen/dim_12"
+                        android:src="@mipmap/ic_phone1" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@+id/iv_imgPhone"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="@dimen/dim_0"
+                        android:layout_toRightOf="@+id/iv_imgPhone"
+                        android:background="@color/grey_color" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bt_editProfile"
+                    style="@style/primaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_30"
+                    android:background="@drawable/primary_btn_background"
+                    android:clickable="true"
+                    android:onClick="onClickEvent"
+                    android:padding="@dimen/dim_8"
+                    android:text="@string/str_update"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>
